@@ -18,31 +18,31 @@
         let connection = await fetch("momondo.php");
         let jData = await connection.json();
 
-        let aOrderedArray = [];
-
-        for (let i = 0; i < jData.schedule.length; i++) {
-          aOrderedArray[jData.schedule[i].flightOrder] = jData.schedule[i];
-        }
-
-        console.log(aOrderedArray);
         let sDivFlight = "";
+        for (let i = 0; i < jData.length; i++) {
+          sDivFlight += `<h1>Flight route</h1>`;
+          let arrayOfFlights = jData[i];
+          let aOrderedArray = [];
+          for (let i = 0; i < arrayOfFlights.schedule.length; i++) {
+            aOrderedArray[arrayOfFlights.schedule[i].order] =
+              arrayOfFlights.schedule[i];
+          }
 
-        for (let i = 0; i < aOrderedArray.length; i++) {
-          let sFromDate = new Date(0);
-          sFromDate.setUTCSeconds(aOrderedArray[i].date);
-          sFromDate = sFromDate.toLocaleString("da-DK");
-          sDivFlight += `
-            <img class="airline-icon" src="icons/${aOrderedArray[i].airlineIcon}" alt="" />
-            <div>FROM: ${aOrderedArray[i].from}</div>
-            <div>DATE: ${sFromDate}</div>`;
+          for (let i = 0; i < aOrderedArray.length; i++) {
+            let sFromDate = new Date(0);
+            sFromDate.setUTCSeconds(aOrderedArray[i].date);
+            sFromDate = sFromDate.toLocaleString("da-DK");
+            sDivFlight += `
+                <img class="airline-icon" src="icons/${aOrderedArray[i].airlineIcon}" alt="" />
+                <div>FROM: ${aOrderedArray[i].from}</div>
+                <div>TO: ${aOrderedArray[i].to}</div>
+                <div>ID: ${aOrderedArray[i].id}</div>
+                <div>DATE: ${sFromDate}</div>`;
+          }
+          document.getElementById("stops").innerHTML = sDivFlight;
         }
-        document.getElementById("stops").innerHTML = sDivFlight;
-        let jLastCity = aOrderedArray[aOrderedArray.length - 1];
-        console.log(jLastCity);
-        let sTo = `<div>Arrives at city: ${jLastCity.to}</div>`;
-        // document.getElementById('stops').innerHTML += sTo
-        document.getElementById("stops").insertAdjacentHTML("beforeend", sTo);
       }
+      getFlights();
     </script>
   </body>
 </html>

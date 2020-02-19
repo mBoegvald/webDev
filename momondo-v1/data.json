@@ -47,7 +47,7 @@
         "from": "A",
         "to": "B",
         "waitingTime": 0,
-        "flightTime": 80,
+        "flightTime": 60,
         "order": 0
       },
       {
@@ -57,7 +57,7 @@
         "from": "B",
         "to": "C",
         "waitingTime": 120,
-        "flightTime": 240,
+        "flightTime": 60,
         "order": 1
       }
     ]

@@ -86,23 +86,16 @@
 
         for (var i = 0; i < jData.length; i++) {
           for (var n = 0; n < jData[i].schedule.length; n++) {
-            // console.log(jData[i].schedule[n]);
-            // console.log("position in array", jData[i].schedule[n].order);
             aOrderedSchedule[jData[i].schedule[n].order] = jData[i].schedule;
           }
         }
         var sDivsWithStops = "";
         for (var i = 0; i < aOrderedSchedule.length; i++) {
-            var flyingTime = 0;
             sDivsWithStops += `<b>Flight route</b>`;
-            var startDate = new Date(0);
-            startDate = setUTCSeconds(aOrderedSchedule[i][0].date)
-            console.log(startDate);
-            
             
             
           for (var n = 0; n < aOrderedSchedule[i].length; n++) {
-            flyingTime = flyingTime + aOrderedSchedule[i][n].flightTime + aOrderedSchedule[i][n].waitingTime;
+
             var sFromDate = new Date(0);
             sFromDate.setUTCSeconds(aOrderedSchedule[i][n].date);
             sFromDate = sFromDate.toLocaleString("da-DK");
@@ -116,7 +109,7 @@
               <div>DATE: ${sFromDate}</div><br>
             </div>`;
           }
-          
+            
           
           var jLastCity = aOrderedSchedule[aOrderedSchedule[i].length - 1];          
           var sTo = `<div>Arrives at city: ${jLastCity[i].to}</div>`;
@@ -124,7 +117,7 @@
         }
         document.getElementById("results").innerHTML = sDivsWithStops;
       }
-      getFlights();
+    //   getFlights();
     </script>
 </body>
 </html>

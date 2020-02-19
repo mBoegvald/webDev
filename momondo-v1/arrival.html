@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="results">
+    <script>
+      async function getFlights() {
+        var connection = await fetch("api/api-get-flights.php");
+        var jData = await connection.json();
+        var aOrderedSchedule = [];
+
+        for (var i = 0; i < jData.length; i++) {
+          for (var n = 0; n < jData[i].schedule.length; n++) {
+            aOrderedSchedule[jData[i].schedule[n].order] = jData[i].schedule;
+          }
+        }
+        var sDivsWithStops = "";
+        for (var i = 0; i < aOrderedSchedule.length; i++) {
+          var totalTime = 0;
+          sDivsWithStops += `<b>Flight route</b>`;
+
+          for (var n = 0; n < aOrderedSchedule[i].length; n++) {
+            totalTime =
+              totalTime +
+              aOrderedSchedule[i][n].flightTime +
+              aOrderedSchedule[i][n].waitingTime;
+
+            var sFromDate = new Date(0);
+            sFromDate.setUTCSeconds(aOrderedSchedule[i][n].date);
+            sFromDate = sFromDate.toLocaleString("da-DK");
+            sDivsWithStops += `
+            <div>
+              <div>FLIGHTTIME: ${aOrderedSchedule[i][n].flightTime} min.</div>
+              <div>WAITING TIME: ${aOrderedSchedule[i][n].waitingTime} min. </div>
+              <div>DATE: ${sFromDate}</div><br>
+            </div>`;
+          }
+
+          var arrivalTime = new Date(0);
+          totalTime = totalTime*60;
+          arrivalTime.setUTCSeconds(aOrderedSchedule[i][0].date + totalTime);
+          arrivalTime = arrivalTime.toLocaleString("da-DK");
+
+          var jLastCity = aOrderedSchedule[aOrderedSchedule[i].length - 1];          
+          var sTo = `<div>Arrives at city: ${arrivalTime}</div>`;
+          sDivsWithStops += `${sTo}`;
+        }
+        document.getElementById("results").innerHTML = sDivsWithStops;
+      }
+      getFlights();
+    </script>
+  </body>
+</html>
