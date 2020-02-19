@@ -1,0 +1,14 @@
+{
+    "flights": [
+        {
+            "id": "AB123",
+            "from": "KBH",
+            "to": "MAL"
+        },
+        {
+            "id": "XYZ12",
+            "from": "MIAMI",
+            "to": "BERLIN"
+        }
+    ]
+}

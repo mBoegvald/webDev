@@ -1,0 +1,8 @@
+#flights {
+  width: 400px;
+  border: 1px solid black;
+}
+.flight {
+  width: 100%;
+  border: 1px solid blue;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Momondo</title>
+  </head>
+  <body>
+    <button onclick="showName()">asdjklasda</button>
+    <div id="boxResults">
+      <input id="txtSearch" type="text" value="From" oninput="getCities()" />
+      <div id="results"></div>
+    </div>
+    <script>
+      //   async function getCities() {
+      //     let response = await fetch("api-city-search.php");
+      //     let sData = await response.text();
+      //     console.log(sData);
+      //     let jData = JSON.parse(sData);
+      //     console.log(jData);
+      //   }
+
+      function showName() {
+        fetch("name.php")
+          .then(data => data.json())
+          .then(data => {
+            console.log(data);
+            document.querySelector("button").innerHTML = data.name;
+          });
+      }
+      function getCities() {
+        let sSearchFor = txtSearch.value;
+        let url = `api-city-search.php?cityName=${sSearchFor}`;
+
+        if (txtSearch.value.length == 0) {
+          results.style.display = "none";
+          return;
+        }
+
+        fetch(url)
+          .then(data => data.json())
+          .then(data => {
+            let sDivCities = "";
+            let citiesArray = data.cities;
+            for (let i = 0; i < citiesArray.length; i++) {
+              sDivCities += `<div onclick="selectCity(this)">${citiesArray[i].name}</div>`;
+              console.log(sDivCities);
+              console.log(citiesArray);
+            }
+            results.innerHTML = sDivCities;
+            results.style.display = "block";
+          })
+          .catch(err => {
+            console.error(err);
+          });
+      }
+
+      function selectCity(objectDOM) {
+        let sCityName = objectDOM.innerHTML;
+        txtSearch.value = sCityName;
+      }
+    </script>
+  </body>
+</html>

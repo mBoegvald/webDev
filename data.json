@@ -1,0 +1,9 @@
+{
+  "cities": [
+    { "name": "ABC" },
+    { "name": "BCD" },
+    { "name": "CDE" },
+    { "name": "DEF" },
+    { "name": "EFG" }
+  ]
+}

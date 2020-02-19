@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORS</title>
+  </head>
+  <body>
+    <h1>CORS</h1>
+
+    <script>
+      async function getData() {
+        let jConnection = await fetch("https://fatsms.com/api-test.php");
+        let sResponse = await jConnection.text();
+        console.log(sResponse);
+      }
+      getData();
+    </script>
+  </body>
+</html>

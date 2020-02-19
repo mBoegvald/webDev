@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack</title>
+  </head>
+  <body>
+    <h1>Flight info</h1>
+    <form id="frmFlight" onsubmit="return false">
+      <input name="txtFlightId" type="text" />
+      <input name="txtFlightFrom" type="text" />
+      <input name="txtFlightTo" type="text" />
+      <button type="button" onclick="saveFlight()">SAVE FLIGHT</button>
+    </form>
+    <script>
+      async function saveFlight() {
+        let oForm = document.querySelector("#frmFlight");
+
+        let jConnection = await fetch("api-save-flight.php", {
+          method: "POST",
+          body: new FormData(oForm)
+        });
+        let jResponse = await jConnection.text();
+        console.log(jResponse);
+      }
+    </script>
+  </body>
+</html>

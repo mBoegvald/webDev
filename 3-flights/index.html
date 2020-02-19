@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momondo</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <button onclick="getFlights()">FIND FLIGHTS</button>
+
+    <div id="stops"></div>
+
+    <script>
+      async function getFlights() {
+        var connection = await fetch("momondo.php");
+        var jData = await connection.json();
+        var aOrderedSchedule = [];
+
+        for (var i = 0; i < jData.length; i++) {
+          for (var n = 0; n < jData[i].schedule.length; n++) {
+            // console.log(jData[i].schedule[n]);
+            // console.log("position in array", jData[i].schedule[n].order);
+            aOrderedSchedule[jData[i].schedule[n].order] = jData[i].schedule;
+          }
+        }
+        console.log("aOrderedSchedule", aOrderedSchedule);
+        var sDivsWithStops = "";
+
+        for (var i = 0; i < aOrderedSchedule.length; i++) {
+          sDivsWithStops += `<br>` + `<b>Flight route</b>`;
+          for (var n = 0; n < aOrderedSchedule[i].length; n++) {
+            console.log(aOrderedSchedule[i][n]);
+            var sFromDate = new Date(0);
+            sFromDate.setUTCSeconds(aOrderedSchedule[i][n].date);
+            sFromDate = sFromDate.toLocaleString("da-DK");
+            sDivsWithStops += `
+            <div>
+              <img class="airline-icon" src="icons/${aOrderedSchedule[i][n].airlineIcon}">
+              <div>FROM: ${aOrderedSchedule[i][n].from}</div>
+              <div>TO: ${aOrderedSchedule[i][n].to}</div>
+              <div>ID: ${aOrderedSchedule[i][n].id}</div>
+              <div>FLIGHTTIME: ${aOrderedSchedule[i][n].flightTime}</div>
+              <div>DATE: ${sFromDate}</div><br>
+            </div>`;
+          }
+        }
+        document.getElementById("stops").innerHTML = sDivsWithStops;
+        // var jLastCity = aOrderedSchedule[aOrderedSchedule.length - 1];
+        // console.log(jLastCity);
+        // var sTo = `<div>Arrives at city: ${jLastCity.to}</div>`;
+        // // document.getElementById('stops').innerHTML += sTo
+        // document.getElementById("stops").insertAdjacentHTML("beforeend", sTo);
+      }
+    </script>
+  </body>
+</html>

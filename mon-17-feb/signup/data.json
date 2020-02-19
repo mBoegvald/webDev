@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "name": "Miklas",
+            "key": "60745410a7aaa9896e942d4ead312d999353b9ed3cadd4d4658f1b0ba93d92fd",
+            "email": "miklasboegvald@gmail.com",
+            "password": "123",
+            "verified": 1
+        },
+        {
+            "name": "Miklas",
+            "key": "de0e59d6367a1d94016dc9de5835c479647c4a309c513fa8c6a68a9d69b52b38",
+            "email": "miklasbogvald@gmail.com",
+            "password": "1234",
+            "verified": 0
+        },
+        {
+            "name": "Miklas",
+            "key": "09042e1c76fe4ca0efe27723eeb9b5326cc588a900ad27339289330fd707de9a",
+            "email": "Miklasboegvald@gmail.com",
+            "password": "12345",
+            "verified": 0
+        },
+        {
+            "name": "Miklas",
+            "key": "7ae5b6e26147e3511e02fd118e01eda2df2175eea0d07383b5bfc3fde6f87165",
+            "email": "Miklasboegvald@gmail.com",
+            "password": "12345",
+            "verified": 0
+        }
+    ]
+}

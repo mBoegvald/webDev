@@ -1,0 +1,36 @@
+{
+  "currency": "DKK",
+  "price": 3000,
+  "schedule": [
+    {
+      "airlineIcon": "SK.png",
+      "date": 1581501600,
+      "id": "SAS1",
+      "from": "A",
+      "to": "B",
+      "waitingTime": 0,
+      "flightTime": 80,
+      "flightOrder": 0
+    },
+    {
+      "airlineIcon": "KL.png",
+      "date": 1581510000,
+      "id": "SAS2",
+      "from": "B",
+      "to": "C",
+      "waitingTime": 60,
+      "flightTime": 180,
+      "flightOrder": 1
+    },
+    {
+      "airlineIcon": "LH.png",
+      "date": 1581513600,
+      "id": "SAS3",
+      "from": "C",
+      "to": "D",
+      "waitingTime": 120,
+      "flightTime": 240,
+      "flightOrder": 2
+    }
+  ]
+}

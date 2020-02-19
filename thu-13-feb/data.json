@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "price": 100,
+    "discount": 10,
+    "stops": ["S1", "S2", "S10"]
+  },
+  {
+    "id": 2,
+    "price": 200,
+    "discount": 20,
+    "stops": ["S3", "S4"]
+  }
+]

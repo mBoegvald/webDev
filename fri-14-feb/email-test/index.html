@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send email</title>
+  </head>
+  <body>
+    <form id="frmFlight" onsubmit="return false">
+        <input name="txtSubject" type="text" value="Subject" />
+        <input name="txtMessage" type="text" value="Message" />
+        <button type="button" onclick="buy(event)">BUY</button>
+  </body>
+  <script>
+    async function buy() {
+        let oForm = document.querySelector("#frmFlight");
+        let jConnection = await fetch("send-email.php", {
+            method: "POST",
+            body: new FormData(oForm)
+    });
+    let jResponse = await jConnection.text();
+    console.log(jResponse);
+    }
+  </script>
+</html>
