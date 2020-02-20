@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
@@ -37,13 +37,16 @@ button {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
+input[type="checkbox"] {
+  height: 1.3rem;
+}
 
 /* NAV */
 
 nav {
   height: 70px;
   margin: 0 auto;
-  padding: 0px 10%;
+  padding: 0px 5rem;
   display: grid;
   grid-template-columns: 40fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
   background-color: rgba(255, 255, 255, 0.2);
@@ -59,6 +62,11 @@ nav > a.active {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+#logo {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
 /* Search */
 
 #search {
@@ -66,12 +74,15 @@ nav > a.active {
   grid-template-columns: 10fr 3fr 10fr 10fr 10fr 5fr;
   grid-gap: 0.5rem;
   width: 100%;
-  padding: 2% 10%;
+  padding: 2% 5rem;
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
+#search button {
+  background-color: white;
+}
 
-#btnSearch {
+#search #btnSearch {
   color: white;
   background-color: rgba(222, 22, 102, 0.8);
 }
@@ -79,11 +90,25 @@ nav > a.active {
   color: white;
 }
 
+#boxFromCity {
+  position: relative;
+}
+#boxFromCity #fromCityResults {
+  display: none;
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: white;
+  color: black;
+}
+
 /* TEMPORAL */
 
 #temporal {
   width: 100%;
-  padding: 0 10%;
+  padding: 0 5rem;
 }
 #temporal img {
   width: 100%;
@@ -95,7 +120,7 @@ main {
   grid-template-columns: 20fr 50fr;
   grid-gap: 2rem;
   width: 100%;
-  padding: 2% 10%;
+  padding: 2% 5rem;
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
@@ -141,24 +166,41 @@ main > #results > div {
 
 #flightRoute {
   display: grid;
-  grid-template-columns: 5fr 5fr 5fr 10fr 10fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: 1rem;
   background-color: white;
   color: #333;
   padding: 1rem;
 }
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 5fr 10fr 10fr 10fr;
+}
+
+.row > div {
+  display: grid;
+  align-content: center;
+}
+
 .airlineIcon {
-  width: 4rem;
+  width: 2rem;
 }
 
 #flightBuy {
   display: grid;
+  padding: 1rem 2rem;
   background-color: #f2f2f2;
-  /* justify-content: center; */
-  align-content: center;
-  padding: 1rem 4rem;
+}
+
+#flightBuy > div {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: black;
 }
 
 #flightBuy button {
+  align-self: flex-end;
   background-color: rgba(40, 167, 69, 1);
   color: white;
 }
