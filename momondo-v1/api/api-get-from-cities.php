@@ -5,7 +5,7 @@ http_response_code(200);
 // $aFromCities = ["a","b","c"];
 
 $sSearchFor = $_GET['cityName'];
-$sData = file_get_contents("city-names.json");
+$sData = file_get_contents("http://localhost/momondo-v1/data/city-names.json");
 $jData = json_decode($sData);
 
 $jResponse = new stdClass();

@@ -67,6 +67,13 @@ nav > a.active {
   font-weight: 400;
 }
 
+/* NAV ADMIN  */
+
+#navAdmin {
+  display: grid;
+  grid-template-columns: 40fr 10fr;
+}
+
 /* Search */
 
 #search {
@@ -90,10 +97,12 @@ nav > a.active {
   color: white;
 }
 
-#boxFromCity {
+#boxFromCity,
+#boxToCity {
   position: relative;
 }
-#boxFromCity #fromCityResults {
+#boxFromCity #fromCityResults,
+#boxToCity #toCityResults {
   display: none;
   position: absolute;
   top: 41px;
@@ -201,6 +210,46 @@ main > #results > div {
 
 #flightBuy button {
   align-self: flex-end;
+  background-color: rgba(40, 167, 69, 1);
+  color: white;
+}
+
+/* LOGIN  */
+
+#login {
+  grid-row: 2rem;
+  width: 30%;
+  margin: 5rem auto;
+}
+
+#login * {
+  margin-top: 1rem;
+}
+
+/* ADMIN */
+
+#admin {
+  margin-bottom: 10rem;
+  color: white;
+}
+
+#list {
+  width: 70%;
+  margin: 0 auto;
+}
+#frmFlightList {
+  display: grid;
+  grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+  grid-column-gap: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+#frmFlightList > div {
+  align-self: end;
+}
+#save-button {
+  display: grid;
+  align-self: bottom;
   background-color: rgba(40, 167, 69, 1);
   color: white;
 }

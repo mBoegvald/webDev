@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "firstname": "Miklas",
+      "lastname": "Bøgvald",
+      "email": "miklasbogvald@gmail.com",
+      "bookingId": "123"
+    }
+  ]
+}
