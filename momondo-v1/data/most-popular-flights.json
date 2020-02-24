@@ -1,24 +1,24 @@
 [
-    {
-        "id": 1,
-        "flightId": "AF89",
-        "companyName": "Air France",
-        "companyShortcut": "AF",
-        "departureTime": "1582188891",
-        "arrivalTime": "1582189891",
-        "totalTime": 600,
-        "price": "100000",
-        "currency": "DKK"
-    },
-    {
-        "id": 2,
-        "flightId": "AF89",
-        "companyName": "Air France",
-        "companyShortcut": "AF",
-        "departureTime": 1582188891,
-        "arrivalTime": 1582189891,
-        "totalTime": 1000000,
-        "price": 19600000,
-        "currency": "DKK"
-    }
+  {
+    "id": 1,
+    "flightId": "AF89",
+    "companyName": "Air France",
+    "companyShortcut": "AF",
+    "departureTime": "1582188891",
+    "arrivalTime": "1582189891",
+    "totalTime": 10000,
+    "price": "10000",
+    "currency": "DKK"
+  },
+  {
+    "id": 2,
+    "flightId": "AF89",
+    "companyName": "Air France",
+    "companyShortcut": "AF",
+    "departureTime": "1582188891",
+    "arrivalTime": "1582189891",
+    "totalTime": 1000000,
+    "price": "19600000",
+    "currency": "DKK"
+  }
 ]

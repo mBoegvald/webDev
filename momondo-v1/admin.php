@@ -36,12 +36,15 @@ foreach($jData as $jFlight) {
                 <input type='text' name='currency' value='$jFlight->currency'>
             </div>
             <div>
-                <button type='button' id='save-button' onclick='saveFlight()'>SAVE</button>
+                <a href='http://localhost/momondo-v1/api/api-update-flight.php?id=$jFlight->id' type='button' id='save-button''>UPDATE</a>
             </div>
+            <div>
+                <a href='http://localhost/momondo-v1/api/api-delete-flight.php?id=$jFlight->id' type='button' id='delete-button'>&#x2716;</a>
+            </div>
+            
         </form>
     ";
 }
-
 
 require_once('top.php');
 

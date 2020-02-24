@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "bookingId": "79bc300f71a0b61b623d73442e8ffe1c",
+            "userFirstname": "Miklas",
+            "userLastname": "B\u00f8gvald",
+            "userEmail": "miklasbogvald@gmail.com",
+            "bookings": {
+                "id": 2,
+                "flightId": "AF89",
+                "companyName": "Air France",
+                "companyShortcut": "AF",
+                "departureTime": "1582188891",
+                "arrivalTime": "1582189891",
+                "price": "19600000",
+                "currency": "DKK"
+            }
+        }
+    ]
+}

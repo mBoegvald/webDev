@@ -75,10 +75,6 @@ foreach($jData as $jFlight) {
         $iTotalTime = $hours.'h. '.$minutes.'min.';
     }
 
-
-    
-    
-
     $sFlightDiv .= "
         <div id='flight'>
             <div id='flightRoute'>
@@ -126,7 +122,7 @@ foreach($jData as $jFlight) {
                 <div>
                     $jFlight->price kr.
                 </div>
-                <button>Buy</button>
+                <button id='flight-$jFlight->id' onclick='checkFlightId(event)'>Buy</button>
             </div>
         </div>
     ";
@@ -173,6 +169,9 @@ require_once('top.php');
                 <?= $sFlightDiv ?>
             </div>
         </div>
+        <?php
+        require_once('modal.html');
+        ?>
     </main>
     <script src="app.js"></script>
 </body>

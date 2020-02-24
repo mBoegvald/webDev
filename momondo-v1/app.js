@@ -49,8 +49,9 @@ function switchInput() {
   document.querySelector("#txtSearchToCity").value = fromCityValue;
 }
 
-async function saveFlight() {
+async function updateFlight(a) {
   let oForm = document.querySelector("#frmFlightList");
+  console.dir(a);
 
   let jConnection = await fetch(
     "http://localhost/momondo-v1/api/api-update-flight.php",
@@ -60,5 +61,29 @@ async function saveFlight() {
     }
   );
   let jResponse = await jConnection.text();
+  // console.log(jResponse);
+}
+
+var flightObj;
+
+async function checkFlightId(event) {
+  var jResponse = await fetch("data/most-popular-flights.json");
+  var aFlights = await jResponse.json();
+  for (i = 0; i < aFlights.length; i++) {
+    if (`flight-${aFlights[i].id}` == event.target.id) {
+      flightObj = aFlights[i];
+      document.querySelector("#buyTicketModal").style.display = "block";
+    }
+  }
+}
+async function bookFlight(flight) {
+  var url = `api/api-book-flight.php?id=${flight.id}`;
+
+  var oForm = document.querySelector("#frmBuyTicket");
+  var jConnection = await fetch(url, {
+    method: "POST",
+    body: new FormData(oForm)
+  });
+  var jResponse = await jConnection.text();
   console.log(jResponse);
 }

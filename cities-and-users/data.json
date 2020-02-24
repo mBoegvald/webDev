@@ -1,0 +1,30 @@
+{
+    "cities": [
+        {
+            "id": "209672eebff602842f31718434e61fdf",
+            "name": "a",
+            "abbr": "a",
+            "lng": "1",
+            "lat": "2"
+        },
+        {
+            "id": "9c0f722fe41464cd2411c52ec6302b01",
+            "name": "Herlev",
+            "abbr": "Herlev",
+            "lng": "Herlev",
+            "lat": "Herlev"
+        }
+    ],
+    "users": [
+        {
+            "id": "c8e87cd779b759355aac776efcacba65",
+            "name": "baa",
+            "age": "10"
+        },
+        {
+            "id": "b7604ad515486f2acfd88e4ec37c8a65",
+            "name": "a",
+            "age": "2"
+        }
+    ]
+}

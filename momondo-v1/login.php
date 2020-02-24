@@ -44,8 +44,9 @@ if(isset($_POST['txtUsername']) && isset($_POST['txtPassword'])){
 }
   require_once('top.php');
 ?>
-  <h1><?=$errorMessage?></h1>
+  
     <section id="login">
+      <h1 id="errorMessage"><?=$errorMessage?></h1>
       <form id="frmAdminLogin" action="login.php" method="POST">
       <input type="hidden" name="frmAdminLogin" value="true">
         <h1>Admin login</h1>
