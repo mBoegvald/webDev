@@ -1,4 +1,10 @@
-<?php 
+<?php
+require_once('validate.php');
+if (!isStringValid($_POST['txtFirstname'], 2, 50) || !isStringValid($_POST['txtLastname'], 2, 50) || !filter_var($_POST['txtEmail'], FILTER_VALIDATE_EMAIL)){
+    echo 'Name or email not correct';
+    exit();
+}
+
 http_response_code(200);
 header('Content-Type: application/json');
 
@@ -28,18 +34,35 @@ foreach($jFlightData as $jFlight) {
         $jUser->bookings = new stdClass();
         $jUser->bookings->id = $jFlight->id;
         $jUser->bookings->flightId = $jFlight->flightId;
+        $jUser->bookings->from = $jFlight->from;
+        $jUser->bookings->fromShortcut = $jFlight->fromShortcut;
+        $jUser->bookings->to = $jFlight->to;
+        $jUser->bookings->toShortcut = $jFlight->toShortcut;
         $jUser->bookings->companyName = $jFlight->companyName;
         $jUser->bookings->companyShortcut = $jFlight->companyShortcut;
         $jUser->bookings->departureTime = $jFlight->departureTime;
         $jUser->bookings->arrivalTime = $jFlight->arrivalTime;
         $jUser->bookings->price = $jFlight->price;
         $jUser->bookings->currency = $jFlight->currency;
+        $from = $jFlight->from;
+        $to = $jFlight->to;
+        $departureTime = date("d-M-Y H:i", substr($jFlight->departureTime, 0, 10));
+
     }
-}
+} 
 array_push($jBookings->users, $jUser);
 
 $sBookings = json_encode($jBookings, JSON_PRETTY_PRINT);
 echo $sBookings;
-
 file_put_contents('../data/bookings.json', $sBookings);
+
+$sSubject = "Thank you for your purchase";
+$sMessage = "Hi $sFirstname $sLastname,
+<br> 
+this email is sent to confirm your purchase of flighttickets from $from to $to. 
+<br>
+Departure time: $departureTime
+";
+require_once('../api/api-send-mail.php');
+
 

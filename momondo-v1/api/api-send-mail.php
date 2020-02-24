@@ -1,10 +1,7 @@
 <?php
 // SEND EMAIL
-print_r($_POST['bookings']);
-exit();
-$sPassword = file_get_contents('http://localhost/momondo-v1/private/password.txt');
-$sSubject = 'Thank you for your purchase';
-$sMessage = "Thank you ";
+$sPassword = "godstedvej";
+
 
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function

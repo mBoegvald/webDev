@@ -2,6 +2,10 @@
   {
     "id": 1,
     "flightId": "AF89",
+    "from": "Copenhagen",
+    "fromShortcut": "CPH",
+    "to": "Berlin",
+    "toShortcut": "BRL",
     "companyName": "Air France",
     "companyShortcut": "AF",
     "departureTime": "1582188891",
@@ -13,6 +17,10 @@
   {
     "id": 2,
     "flightId": "AF89",
+    "from": "Malmö",
+    "fromShortcut": "MAL",
+    "to": "Hamburg",
+    "toShortcut": "HAM",
     "companyName": "Air France",
     "companyShortcut": "AF",
     "departureTime": "1582188891",
