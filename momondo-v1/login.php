@@ -21,19 +21,19 @@ if(isset($_POST['txtUsername']) && isset($_POST['txtPassword'])){
   if($_POST['frmCustomerLogin']) {
 
     // Get array of users
-    $sUsers = file_get_contents('http://localhost/momondo-v1/data/users.json');
+    $sUsers = file_get_contents('http://localhost/momondo-v1/data/bookings.json');
     $jUsers = json_decode($sUsers);
 
     // Loop through array
     foreach($jUsers->users as $jUser){
       // Make sure lastname is lowercase
-      $jUser->lastname = mb_strtolower($jUser->lastname,'UTF-8');
+      $jUser->userLastname = mb_strtolower($jUser->userLastname,'UTF-8');
       $_POST['txtUsername'] = mb_strtolower($_POST['txtUsername'],'UTF-8');
       $admin = false;
 
-      if($jUser->lastname == $_POST['txtUsername'] && $jUser->bookingId == $_POST['txtPassword']){
+      if($jUser->userLastname == $_POST['txtUsername'] && $jUser->bookingId == $_POST['txtPassword']){
         session_start();
-        $_SESSION['sName'] = ucfirst($jUser->firstname).' '.ucfirst($jUser->lastname);
+        $_SESSION['sName'] = ucfirst($jUser->userFirstname).' '.ucfirst($jUser->userLastname);
         $_SESSION['bAdmin'] = $admin;
         header('Location: customer.php');
         exit();

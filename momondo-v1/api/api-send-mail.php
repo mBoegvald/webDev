@@ -1,6 +1,6 @@
 <?php
 // SEND EMAIL
-$sPassword = "godstedvej";
+$sPassword = file_get_contents('../private/password.txt');
 
 
 // Import PHPMailer classes into the global namespace
@@ -45,7 +45,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $sSubject;
-    $mail->Body    = $sMessage;
+    $mail->Body    = $sEmailMessage;
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

@@ -50,19 +50,26 @@ foreach($jFlightData as $jFlight) {
 
     }
 } 
+// Save changes
 array_push($jBookings->users, $jUser);
 
 $sBookings = json_encode($jBookings, JSON_PRETTY_PRINT);
 echo $sBookings;
 file_put_contents('../data/bookings.json', $sBookings);
 
+// Send email and SMS
+
 $sSubject = "Thank you for your purchase";
-$sMessage = "Hi $sFirstname $sLastname,
+$sEmailMessage = "Hi $sFirstname $sLastname,
 <br> 
 this email is sent to confirm your purchase of flighttickets from $from to $to. 
 <br>
-Departure time: $departureTime
-";
+Departure time: $departureTime";
+
+$smsMessage = "Hi $sFirstname $sLastname,
+<br> 
+Confirmation of purchase. 
+Flight from $from to $to.";
+
 require_once('../api/api-send-mail.php');
-
-
+require_once('../api/api-send-sms.php');

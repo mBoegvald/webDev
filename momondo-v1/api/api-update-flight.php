@@ -1,12 +1,27 @@
-<?php 
-if(isset($_POST["companyName"]) && isset($_POST['companyShortcut'])
-&& isset($_POST['departureTime']) && isset($_POST['arrivalTime']) 
-&& isset($_POST['price']) && isset($_POST['currency'])) {
+<?php
+require_once('validate.php');
+if (
+isset($_POST["from"])
+&& isset($_POST["fromShortcut"])
+&& isset($_POST["to"])
+&& isset($_POST["toShortcut"])
+&& isset($_POST["companyName"])
+&& isset($_POST['companyShortcut'])
+&& isset($_POST['departureTime']) 
+&& isset($_POST['arrivalTime']) 
+&& isset($_POST['price']) 
+&& isset($_POST['currency'])
+){
+    
     $sData = file_get_contents('../data/most-popular-flights.json');
     $jData = json_decode($sData);   
 
     foreach($jData as $jFlight){
         if($jFlight->id == $_POST['id']){
+            $jFlight->from = $_POST['from'];
+            $jFlight->fromShortcut = $_POST['fromShortcut'];
+            $jFlight->to = $_POST['to'];
+            $jFlight->toShortcut = $_POST['toShortcut'];
             $jFlight->companyName = $_POST['companyName'];
             $jFlight->companyShortcut = $_POST['companyShortcut'];
             $jFlight->departureTime = $_POST['departureTime'];
@@ -22,6 +37,7 @@ if(isset($_POST["companyName"]) && isset($_POST['companyShortcut'])
     header("Location: http://localhost/momondo-v1/admin.php");
     exit;
 }
+
 
 if(isset($_GET['id'])){
     
@@ -40,19 +56,35 @@ if(isset($_GET['id'])){
                         <input type="hidden" name='id' value='<?=$jFlight->id?>'></input>
                     </div>
                     <div>
+                        <label>From</label>
+                        <input type='text' name='from' value='<?=$jFlight->from?>'>
+                    </div>
+                    <div>
+                        <label>From abbr.</label>
+                        <input type='text' name='fromShortcut' value='<?=$jFlight->fromShortcut?>'>
+                    </div>
+                    <div>
+                        <label>To</label>
+                        <input type='text' name='to' value='<?=$jFlight->to?>'>
+                    </div>
+                    <div>
+                        <label>To abbr.</label>
+                        <input type='text' name='toShortcut' value='<?=$jFlight->toShortcut?>'>
+                    </div>
+                    <div>
                         <label>Company name</label>
                         <input type='text' name='companyName' value='<?=$jFlight->companyName?>'>
                     </div>
                     <div>
-                        <label>Company abbreviation</label>
+                        <label>Company abbr.</label>
                         <input type='text' name='companyShortcut' value='<?=$jFlight->companyShortcut?>'>
                     </div>
                     <div>
-                        <label>Time of departure</label>
+                        <label>Departure</label>
                         <input type='text'name='departureTime' value='<?=$jFlight->departureTime?>'>
                     </div>
                     <div>
-                        <label>Time of arrival</label>
+                        <label>Arrival</label>
                         <input type='text' name='arrivalTime' value='<?=$jFlight->arrivalTime?>'>
                     </div>
                     <div>
@@ -64,7 +96,7 @@ if(isset($_GET['id'])){
                         <input type='text' name='currency' value='<?=$jFlight->currency?>'>
                     </div>
                     <div>
-                        <button>UPDATE</button>
+                        <button id="save-button">UPDATE</button>
                     </div>
                 </form>
             </div>

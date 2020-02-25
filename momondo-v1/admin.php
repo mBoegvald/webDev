@@ -12,33 +12,49 @@ foreach($jData as $jFlight) {
         <form id='frmFlightList' onsubmit='return false'>
             <input type='hidden' name='id' value='$jFlight->id'>
             <div>
+                <label>From</label>
+                <input type='text' name='from' value='$jFlight->from' readonly>
+            </div>
+            <div>
+                <label>From abbr.</label>
+                <input type='text' name='fromShortcut' value='$jFlight->fromShortcut'readonly>
+            </div>
+            <div>
+                <label>To</label>
+                <input type='text' name='to' value='$jFlight->to'readonly>
+            </div>
+            <div>
+                <label>To abbr.</label>
+                <input type='text' name='toShortcut' value='$jFlight->toShortcut'readonly>
+            </div>
+            <div>
                 <label>Company name</label>
-                <input type='text' name='companyName' value='$jFlight->companyName'>
+                <input type='text' name='companyName' value='$jFlight->companyName'readonly>
             </div>
             <div>
-                <label>Company abbreviation</label>
-                <input type='text' name='companyShortcut' value='$jFlight->companyShortcut'>
+                <label>Company abbr.</label>
+                <input type='text' name='companyShortcut' value='$jFlight->companyShortcut'readonly>
             </div>
             <div>
-                <label>Time of departure</label>
-                <input type='text'name='departureTime' value='$jFlight->departureTime'>
+                <label>Departure</label>
+                <input type='text'name='departureTime' value='$jFlight->departureTime'readonly>
             </div>
             <div>
-                <label>Time of arrival</label>
-                <input type='text' name='arrivalTime' value='$jFlight->arrivalTime'>
+                <label>Arrival</label>
+                <input type='text' name='arrivalTime' value='$jFlight->arrivalTime'readonly>
             </div>
             <div>
                 <label>Price</label>
-                <input type='text' name='price' value='$jFlight->price'>
+                <input type='text' name='price' value='$jFlight->price'readonly>
             </div>
             <div>
                 <label>Currency</label>
-                <input type='text' name='currency' value='$jFlight->currency'>
+                <input type='text' name='currency' value='$jFlight->currency'readonly>
             </div>
-            <div>
-                <a href='http://localhost/momondo-v1/api/api-update-flight.php?id=$jFlight->id' type='button' id='save-button''>UPDATE</a>
+            <div id='div-save-button'>
+                <a href='http://localhost/momondo-v1/api/api-update-flight.php?id=$jFlight->id' type='button' id='save-button''>EDIT</a>
             </div>
-            <div>
+            <div id='div-delete-button'>
                 <a href='http://localhost/momondo-v1/api/api-delete-flight.php?id=$jFlight->id' type='button' id='delete-button'>&#x2716;</a>
             </div>
             
