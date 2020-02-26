@@ -1,256 +1,260 @@
 {
-    "users": [
-        {
-            "bookingId": "79bc300f71a0b61b623d73442e8ffe1c",
-            "userFirstname": "Miklas",
-            "userLastname": "B\u00f8gvald",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 2,
-                "flightId": "AF89",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "19600000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "ea3594731f9c6a2871495f90944efd37",
-            "userFirstname": "Miklas",
-            "userLastname": "B\u00f8gvald",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "306bae21f467b563f44a9cc55b1214a9",
-            "userFirstname": "Miklas",
-            "userLastname": "B\u00f8gvald",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "17dc22811d4ea325b3b21ad295fae694",
-            "userFirstname": "Miklas",
-            "userLastname": "B\u00f8gvald",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "9039463ea16cafca5c3926676fa7531c",
-            "userFirstname": "Miklas",
-            "userLastname": "B\u00f8gvald",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "14d943026f6587b9cbf3aa0cc7a8ca55",
-            "userFirstname": "",
-            "userLastname": "",
-            "userEmail": "",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "c73c56121d00659920cde371517f08cc",
-            "userFirstname": "",
-            "userLastname": "",
-            "userEmail": "",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "e2264550e1cb0a9ec086925ffaadefeb",
-            "userFirstname": "aa",
-            "userLastname": "aa",
-            "userEmail": "aasdasdas@asda.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "cac93e35713ce24db153ce289a14b207",
-            "userFirstname": "Miklas",
-            "userLastname": "B\u00f8gvald",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "ee6b8a4074d10a52f5a2d8ae100a05e5",
-            "userFirstname": "Miklas",
-            "userLastname": "BAS",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "c98f085fa07e85562793135c3e9892ec",
-            "userFirstname": "Miklas",
-            "userLastname": "BAS",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "483ec6ad8d960a8cf321fd1e5937f681",
-            "userFirstname": "Miklas",
-            "userLastname": "BAS",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "97db517c31ff03f843bee6fe86c754e5",
-            "userFirstname": "Miklas",
-            "userLastname": "BAS",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        }
-    ]
+  "users": [
+    {
+      "bookingId": "79bc300f71a0b61b623d73442e8ffe1c",
+      "userFirstname": "Miklas",
+      "userLastname": "B\u00f8gvald",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 2,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "ea3594731f9c6a2871495f90944efd37",
+      "userFirstname": "Miklas",
+      "userLastname": "B\u00f8gvald",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "306bae21f467b563f44a9cc55b1214a9",
+      "userFirstname": "Miklas",
+      "userLastname": "B\u00f8gvald",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "17dc22811d4ea325b3b21ad295fae694",
+      "userFirstname": "Miklas",
+      "userLastname": "B\u00f8gvald",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "9039463ea16cafca5c3926676fa7531c",
+      "userFirstname": "Miklas",
+      "userLastname": "B\u00f8gvald",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "14d943026f6587b9cbf3aa0cc7a8ca55",
+      "userFirstname": "",
+      "userLastname": "",
+      "userEmail": "",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "c73c56121d00659920cde371517f08cc",
+      "userFirstname": "",
+      "userLastname": "",
+      "userEmail": "",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "e2264550e1cb0a9ec086925ffaadefeb",
+      "userFirstname": "aa",
+      "userLastname": "aa",
+      "userEmail": "aasdasdas@asda.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "cac93e35713ce24db153ce289a14b207",
+      "userFirstname": "Miklas",
+      "userLastname": "B\u00f8gvald",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "ee6b8a4074d10a52f5a2d8ae100a05e5",
+      "userFirstname": "Miklas",
+      "userLastname": "BAS",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "c98f085fa07e85562793135c3e9892ec",
+      "userFirstname": "Miklas",
+      "userLastname": "BAS",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "483ec6ad8d960a8cf321fd1e5937f681",
+      "userFirstname": "Miklas",
+      "userLastname": "BAS",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    },
+    {
+      "bookingId": "97db517c31ff03f843bee6fe86c754e5",
+      "userFirstname": "Miklas",
+      "userLastname": "BAS",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": 1,
+        "flightId": "AF89",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": "1582188891",
+        "arrivalTime": "1582189891",
+        "price": "10000",
+        "currency": "DKK"
+      }
+    }
+  ]
 }

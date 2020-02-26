@@ -34,7 +34,10 @@ if(isset($_POST['txtUsername']) && isset($_POST['txtPassword'])){
       if($jUser->userLastname == $_POST['txtUsername'] && $jUser->bookingId == $_POST['txtPassword']){
         session_start();
         $_SESSION['sName'] = ucfirst($jUser->userFirstname).' '.ucfirst($jUser->userLastname);
+        $_SESSION['sFirstname'] = $jUser->userFirstname;
+        $_SESSION['sLastname'] = $jUser->userLastname;
         $_SESSION['bAdmin'] = $admin;
+        $_SESSION['bookingId'] = $_POST['txtPassword'];
         header('Location: customer.php');
         exit();
       }

@@ -311,3 +311,17 @@ main > #results > div {
   transform: translate(-50%, -50%);
   border-radius: 5px;
 }
+
+/* CUSTOMER */
+
+#booking-div * {
+  color: white;
+}
+
+#booking-div > div > h2 {
+  margin: 1rem 0;
+}
+
+#booking-div > div > p {
+  padding: 0.2rem 0;
+}
