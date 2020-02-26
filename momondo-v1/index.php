@@ -67,8 +67,8 @@ foreach($jData as $jFlight) {
     }else {
         $sFastestTotalTime = $hours.'h. '.$minutes.'min.';
     }
-
     $sDepartureDate = date("d-M-Y H:i", substr($jFlight->departureTime, 0, 10));
+    $sHomeDate = date("d-M-Y H:i", substr($jFlight->homeDate, 0, 10));
     $init = $jFlight->totalTime;
     $hours = floor($init / 3600);
     $minutes = floor(($init / 60) % 60);
@@ -95,12 +95,11 @@ foreach($jData as $jFlight) {
                             <p>$jFlight->companyName</p>
                         </div>
                         <div>
-                            1 stop
-                            <p>Amsterdam</p>
+                            Direct
                         </div>
                         <div>
                             $iTotalTime
-                            <p>CPH-MIA</p>
+                            <p>$jFlight->fromShortcut - $jFlight->toShortcut</p>
                         </div>
                     </div>
                     <div class='row'>
@@ -108,18 +107,17 @@ foreach($jData as $jFlight) {
                             <input type='checkbox'>
                         </div>
                         <div>
-                            <img class='airlineIcon' src='icons/SK.png' alt=''>
+                            <img class='airlineIcon' src='icons/$jFlight->companyShortcut.png' alt=''>
                         </div>
                         <div>
-                            18:15 - 18:30
-                            <p>KLM</p>
+                        $sHomeDate
+                            <p>$jFlight->companyName</p>
                         </div>
                         <div>
-                            1 stop
-                            <p>Amsterdam</p>
+                            Direct
                         </div>
-                        <div>10h. 20min.
-                            <p>CPH-MIA</p>
+                        <div>Total time
+                            <p>$jFlight->toShortcut - $jFlight->fromShortcut</p>
                         </div>
                     </div>
                 </div>
@@ -148,14 +146,34 @@ require_once('top.php');
             </div>
         </div>
         <input type="text" placeholder="From date"></input>
-        <input  type="text" placeholder="To date"></input>
-        <button id="btnSearch">SEARCH</button>
+        <input type="text" placeholder="To date"></input>
+        <button id="btnSearch" onclick="getSearchedFlights('from')">SEARCH</button>
     </section>
     <section id="temporal">
         <img src="screenshot.png" alt="">
     </section>
     <main>
-        <div id="options">OPTIONS</div>
+        <div id="options">
+            <div id="stops-div">
+                Stops
+                <div>
+                    <input name="noStops" type="checkbox" checked><label for="noStops">Direct</label>
+                </div>
+                <div>
+                    <input name="oneStop" type="checkbox"><label for="oneStop">1 stop</label>
+                </div>
+                <div>
+                    <input name="twoStops" type="checkbox"><label for="twoStops">2 stops</label>
+                </div>
+            </div>
+            <div id="price-div">
+                Price
+                <div>
+                    <input oninput="rangePrice()" name="noStops" min="0" max="10000" id="price-slide" type="range">
+                    <span id="range-price"></span>
+                </div>
+            </div>
+        </div>
         <div id="results">
             <div id="priceOptions">
                 <div id="cheapest">CHEAPEST
@@ -179,6 +197,8 @@ require_once('top.php');
         require_once('modal.html');
         ?>
     </main>
+    <script src="validate.js"></script>
     <script src="app.js"></script>
+    
 </body>
 </html>

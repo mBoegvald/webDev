@@ -41,9 +41,10 @@ if ( isset($_POST["from"])
     $jFlight->toShortcut = $_POST['toShortcut'];
     $jFlight->companyName = $_POST['companyName'];
     $jFlight->companyShortcut = $_POST['companyShortcut'];
-    $jFlight->departureTime = $_POST['departureTime'];
-    $jFlight->arrivalTime = $_POST['arrivalTime'];
-    $jFlight->price = $_POST['price'];
+    $jFlight->departureTime = (int)$_POST['departureTime'];
+    $jFlight->arrivalTime = (int)$_POST['arrivalTime'];
+    $jFlight->homeDate = $_POST['departureTime']+604800;
+    $jFlight->price = (int)$_POST['price'];
     $jFlight->currency = $_POST['currency'];
     $jFlight->mostPopular = $_POST['mostPopular'];
 
@@ -105,7 +106,7 @@ if ( isset($_POST["from"])
                 <input type='text' name='currency'>
             </div>
             <div>
-                <button id="save-button">UPDATE</button>
+                <button id="save-button">CREATE FLIGHT</button>
             </div>
         </form>
     </div>

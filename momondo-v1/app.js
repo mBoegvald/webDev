@@ -18,6 +18,8 @@ async function getCities(fromOrTo) {
   var jResponse = await fetch(url);
   var aCities = await jResponse.json();
 
+  console.log(aCities);
+
   if (sSearchFor.length == 0 || !aCities[fromOrTo].length) {
     oCityResults.style.display = "none";
     return;
@@ -27,6 +29,70 @@ async function getCities(fromOrTo) {
     renderCity(aCities[fromOrTo][i], oCityResults);
   }
   oCityResults.style.display = "grid";
+}
+
+async function getSearchedFlights(fromOrTo) {
+  let url = `api/api-get-searched-flights.php?cityName=${sSearchFor}&fromOrTo=${fromOrTo}`;
+  var jResponse = await fetch(url);
+  var aCities = await jResponse.json();
+  var sFlightDiv = "";
+  for (i = 0; i < aCities.length; i++) {
+    var sDepartureDateUTC = new Date(aCities[i].departureTime * 1000);
+    var sDepartureDate = sDepartureDateUTC.toDateString();
+    var sHomeDateUTC = new Date(aCities[i].homeDate * 1000);
+    var sHomeDate = sHomeDateUTC.toDateString();
+    sFlightDiv += `
+            <div id='flight'>
+                <div id='flightRoute'>
+                    <div class='row'>
+                        <div>
+                            <input type='checkbox'>
+                        </div>
+                        <div>
+                            <img class='airlineIcon' src='icons/${aCities[i].companyShortcut}.png' alt=''>
+                        </div>
+                        <div>
+                          ${sDepartureDate}
+                            <p>${aCities[i].companyName}</p>
+                        </div>
+                        <div>
+                            Direct
+                        </div>
+                        <div>
+                            Total time
+                            <p>${aCities[i].fromShortcut} - ${aCities[i].toShortcut}</p>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div>
+                            <input type='checkbox'>
+                        </div>
+                        <div>
+                            <img class='airlineIcon' src='icons/${aCities[i].companyShortcut}.png' alt=''>
+                        </div>
+                        <div>
+                        ${sHomeDate}
+                            <p>${aCities[i].companyName}</p>
+                        </div>
+                        <div>
+                            Direct
+                        </div>
+                        <div>
+                        Total time
+                            <p>${aCities[i].toShortcut} - ${aCities[i].fromShortcut}</p>
+                        </div>
+                    </div>
+                </div>
+                <div id='flightBuy'>
+                    <div>
+                        ${aCities[i].price} kr.
+                    </div>
+                    <button id='flight-${aCities[i].id}' onclick='checkFlightId(event)'>Buy</button>
+                </div>
+            </div>
+        `;
+  }
+  document.getElementById("flights").innerHTML = sFlightDiv;
 }
 
 function renderCity(sCityName, oCityResults) {
@@ -89,4 +155,9 @@ async function bookFlight(flight) {
   });
   var jResponse = await jConnection.text();
   console.log(jResponse);
+}
+
+function rangePrice() {
+  document.querySelector("#range-price").textContent =
+    document.querySelector("#price-slide").value + " kr.";
 }

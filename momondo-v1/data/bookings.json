@@ -1,44 +1,24 @@
 {
-    "users": [
-        {
-            "bookingId": "79bc300f71a0b61b623d73442e8ffe1c",
-            "userFirstname": "Miklas",
-            "userLastname": "B\u00f8gvald",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 2,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582188891",
-                "arrivalTime": "1582189891",
-                "price": "10000",
-                "currency": "DKK"
-            }
-        },
-        {
-            "bookingId": "6845b5c31219fd456a76ad52892453b8",
-            "userFirstname": "Miklas",
-            "userLastname": "B\u00f8gvald",
-            "userEmail": "miklasbogvald@gmail.com",
-            "bookings": {
-                "id": 1,
-                "flightId": "AF89",
-                "from": "Copenhagen",
-                "fromShortcut": "CPH",
-                "to": "Berlin",
-                "toShortcut": "BRL",
-                "companyName": "Air France",
-                "companyShortcut": "AF",
-                "departureTime": "1582718400",
-                "arrivalTime": "1582725600",
-                "price": "300000",
-                "currency": "DKK"
-            }
-        }
-    ]
+  "users": [
+    {
+      "bookingId": "49aea19c817b868c0d43ab27db7c0147",
+      "userFirstname": "Miklas",
+      "userLastname": "Boegvald",
+      "userEmail": "miklasbogvald@gmail.com",
+      "bookings": {
+        "id": "7e11e588c05ce9f69f9e895d775a4b16",
+        "flightId": "AF12",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BRL",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": 1582188891,
+        "arrivalTime": 1582189891,
+        "price": 100000,
+        "currency": "DKK"
+      }
+    }
+  ]
 }

@@ -13,7 +13,7 @@ foreach($jData->users as $jFlight) {
         $companyName = $jFlight->bookings->companyName;
         $departureTime = date("d-M-Y H:i", substr($jFlight->bookings->departureTime, 0, 10));
         $arrivalTime = date("d-M-Y H:i", substr($jFlight->bookings->arrivalTime, 0, 10));
-        $price = $jFlight->bookings->price;
+        $price = $jFlight->bookings->price/100;
 
         $sBookingDiv .= "
             <div id='booking-div'>
