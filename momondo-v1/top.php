@@ -48,8 +48,8 @@ $navOptions = [
     'admin' => [
         '<nav id="navAdmin">',
         '<a href="http://localhost/momondo-v1/index.php" id="logo" class="active">Momondo</a>',
-        '<a href="">Edit/Delete flights</a>',
-        '<a href="">Create flights</a>',
+        '<a href="http://localhost/momondo-v1/admin.php">Edit/Delete flights</a>',
+        '<a href="http://localhost/momondo-v1/api/api-create-flight.php">Create flights</a>',
         '<a href="http://localhost/momondo-v1/logout.php">Logout</a>',
         '</nav>'
     ]

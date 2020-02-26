@@ -2,15 +2,25 @@
 require_once('has-access.php');
 $sName = $_SESSION['sName'];
 
-$sData = file_get_contents('http://localhost/momondo-v1/data/most-popular-flights.json');
+$sData = file_get_contents('http://localhost/momondo-v1/data/flights.json');
 $jData = json_decode($sData);
 $sFlightDiv = '';
 
 foreach($jData as $jFlight) {
+    if ($jFlight->mostPopular) {
+        $checked = 'checked';
+    }
+    if(!$jFlight->mostPopular) {
+        $checked = '';
+    }
 
     $sFlightDiv .= "
         <form id='frmFlightList' onsubmit='return false'>
             <input type='hidden' name='id' value='$jFlight->id'>
+            <div>
+                <label>Most popular</label>
+                <input type='checkbox' name='mostPopular' value=true $checked disabled>
+            </div>
             <div>
                 <label>From</label>
                 <input type='text' name='from' value='$jFlight->from' readonly>

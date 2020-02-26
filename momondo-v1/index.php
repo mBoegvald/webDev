@@ -1,5 +1,5 @@
 <?php 
-$sData = file_get_contents('http://localhost/momondo-v1/data/most-popular-flights.json');
+$sData = file_get_contents('http://localhost/momondo-v1/data/flights.json');
 $jData = json_decode($sData);
 $sFlightDiv = '';
 
@@ -78,57 +78,60 @@ foreach($jData as $jFlight) {
         $iTotalTime = $hours.'h. '.$minutes.'min.';
     }
 
-    $sFlightDiv .= "
-        <div id='flight'>
-            <div id='flightRoute'>
-                <div class='row'>
-                    <div>
-                        <input type='checkbox'>
+    if($jFlight->mostPopular === true) {
+
+        $sFlightDiv .= "
+            <div id='flight'>
+                <div id='flightRoute'>
+                    <div class='row'>
+                        <div>
+                            <input type='checkbox'>
+                        </div>
+                        <div>
+                            <img class='airlineIcon' src='icons/$jFlight->companyShortcut.png' alt=''>
+                        </div>
+                        <div>
+                            $sDepartureDate
+                            <p>$jFlight->companyName</p>
+                        </div>
+                        <div>
+                            1 stop
+                            <p>Amsterdam</p>
+                        </div>
+                        <div>
+                            $iTotalTime
+                            <p>CPH-MIA</p>
+                        </div>
                     </div>
-                    <div>
-                        <img class='airlineIcon' src='icons/$jFlight->companyShortcut.png' alt=''>
-                    </div>
-                    <div>
-                        $sDepartureDate
-                        <p>$jFlight->companyName</p>
-                    </div>
-                    <div>
-                        1 stop
-                        <p>Amsterdam</p>
-                    </div>
-                    <div>
-                        $iTotalTime
-                        <p>CPH-MIA</p>
+                    <div class='row'>
+                        <div>
+                            <input type='checkbox'>
+                        </div>
+                        <div>
+                            <img class='airlineIcon' src='icons/SK.png' alt=''>
+                        </div>
+                        <div>
+                            18:15 - 18:30
+                            <p>KLM</p>
+                        </div>
+                        <div>
+                            1 stop
+                            <p>Amsterdam</p>
+                        </div>
+                        <div>10h. 20min.
+                            <p>CPH-MIA</p>
+                        </div>
                     </div>
                 </div>
-                <div class='row'>
+                <div id='flightBuy'>
                     <div>
-                        <input type='checkbox'>
+                        $jFlight->price kr.
                     </div>
-                    <div>
-                        <img class='airlineIcon' src='icons/SK.png' alt=''>
-                    </div>
-                    <div>
-                        18:15 - 18:30
-                        <p>KLM</p>
-                    </div>
-                    <div>
-                        1 stop
-                        <p>Amsterdam</p>
-                    </div>
-                    <div>10h. 20min.
-                        <p>CPH-MIA</p>
-                    </div>
+                    <button id='flight-$jFlight->id' onclick='checkFlightId(event)'>Buy</button>
                 </div>
             </div>
-            <div id='flightBuy'>
-                <div>
-                    $jFlight->price kr.
-                </div>
-                <button id='flight-$jFlight->id' onclick='checkFlightId(event)'>Buy</button>
-            </div>
-        </div>
-    ";
+        ";
+    }
 }
 require_once('top.php');
 ?>

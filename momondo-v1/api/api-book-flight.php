@@ -26,7 +26,7 @@ $jUser->userEmail = $sEmail;
 // Get flight data
 $flightId = $_GET['id'];
 
-$sFlightData = file_get_contents('../data/most-popular-flights.json');
+$sFlightData = file_get_contents('../data/flights.json');
 $jFlightData = json_decode($sFlightData);
 
 foreach($jFlightData as $jFlight) {
@@ -49,7 +49,7 @@ foreach($jFlightData as $jFlight) {
         $departureTime = date("d-M-Y H:i", substr($jFlight->departureTime, 0, 10));
 
     }
-} 
+}
 // Save changes
 array_push($jBookings->users, $jUser);
 

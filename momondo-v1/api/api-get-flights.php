@@ -3,7 +3,7 @@
 // curl
 // file_get_contents open a file
 // file_get_contents open a URL
-$sData = file_get_contents('http://localhost/momondo-v1/data/most-popular-flights.json');
+$sData = file_get_contents('http://localhost/momondo-v1/data/flights.json');
 //{"status":1,"price":500}
 $jData = json_decode($sData); 
 

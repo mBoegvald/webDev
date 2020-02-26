@@ -1,5 +1,4 @@
 <?php 
-header('Location: cities.php');
 
 $cityID = bin2hex(random_bytes(16));
 $cityName = $_POST["city-name"];
@@ -25,3 +24,6 @@ $sData = json_encode($jData, JSON_PRETTY_PRINT);
 echo $sData;
 
 file_put_contents('data.json', $sData);
+
+header('Location: cities.php');
+exit();

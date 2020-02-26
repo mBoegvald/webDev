@@ -12,16 +12,19 @@ async function getCities(fromOrTo) {
     oCityResults.innerHTML = "";
     sSearchFor = txtSearchToCity.value;
   }
-  let url = `api/api-get-from-cities.php?cityName=${sSearchFor}`;
+
+  let url = `api/api-search-flight.php?cityName=${sSearchFor}&fromOrTo=${fromOrTo}`;
+
   var jResponse = await fetch(url);
   var aCities = await jResponse.json();
 
-  if (sSearchFor.length == 0 || !aCities.cities.length) {
+  if (sSearchFor.length == 0 || !aCities[fromOrTo].length) {
     oCityResults.style.display = "none";
     return;
   }
-  for (i = 0; i < aCities.cities.length; i++) {
-    renderCity(aCities.cities[i], oCityResults);
+
+  for (i = 0; i < aCities[fromOrTo].length; i++) {
+    renderCity(aCities[fromOrTo][i], oCityResults);
   }
   oCityResults.style.display = "grid";
 }
@@ -67,7 +70,7 @@ async function updateFlight(a) {
 var flightObj;
 
 async function checkFlightId(event) {
-  var jResponse = await fetch("data/most-popular-flights.json");
+  var jResponse = await fetch("data/flights.json");
   var aFlights = await jResponse.json();
   for (i = 0; i < aFlights.length; i++) {
     if (`flight-${aFlights[i].id}` == event.target.id) {
