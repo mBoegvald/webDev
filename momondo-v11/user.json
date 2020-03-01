@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "email": "a@a.com",
+            "name": "jak",
+            "password": "a1231sdf",
+            "verified": 0,
+            "key": "6f1f18e76b10b65516dd3698bb8cacb1"
+        },
+        {
+            "email": "c@c.com",
+            "name": "jako",
+            "password": "1234",
+            "verified": 1,
+            "key": "d9381336e633d845acc8d5053a7f8453"
+        },
+        {
+            "email": "jaks@gmail.com",
+            "name": "jaks",
+            "password": "123",
+            "verified": 1,
+            "key": "8dc81960bb01332f51d2c2563e9b455a"
+        }
+    ]
+}

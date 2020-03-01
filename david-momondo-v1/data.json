@@ -1,0 +1,78 @@
+[
+  {
+    "id": "asdasdasd123123",
+    "price": 1500,
+    "currency": "DKK",
+    "schedule": [
+      {
+        "flightId": "KM89",
+        "from": "Paris",
+        "fromShortcut": "PAR",
+        "to": "Rome",
+        "toShortcut": "RME",
+        "companyName": "Royal Dutch Airlines",
+        "companyShortcut": "KLM",
+        "departureTime": 1580001600,
+        "arrivalTime": 1580001600,
+        "totalTime": 600
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "price": 2000,
+    "currency": "DKK",
+    "schedule": [
+      {
+        "flightId": "SAS45",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Berlin",
+        "toShortcut": "BER",
+        "companyName": "Scandinavian Airlines",
+        "companyShortcut": "SAS",
+        "departureTime": 1580001600,
+        "arrivalTime": 1580001600,
+        "totalTime": 5000
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "price": 12100,
+    "currency": "DKK",
+    "schedule": [
+      {
+        "flightId": "AF19",
+        "from": "Luxembourg",
+        "fromShortcut": "LUX",
+        "to": "Tokyo",
+        "toShortcut": "TYO",
+        "companyName": "Air France",
+        "companyShortcut": "AF",
+        "departureTime": 1580001600,
+        "arrivalTime": 1580001600,
+        "totalTime": 9500
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "price": 1600,
+    "currency": "DKK",
+    "schedule": [
+      {
+        "flightId": "SAS91",
+        "from": "Copenhagen",
+        "fromShortcut": "CPH",
+        "to": "Stockholm",
+        "toShortcut": "STHLM",
+        "companyName": "Scandinavian Airlines",
+        "companyShortcut": "SAS",
+        "departureTime": 1580001600,
+        "arrivalTime": 1580001600,
+        "totalTime": 90000
+      }
+    ]
+  }
+]

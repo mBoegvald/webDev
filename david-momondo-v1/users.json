@@ -1,0 +1,64 @@
+{
+    "users": [
+        {
+            "bookingId": "99c01907727c03e945d592a1cf8f0ca6",
+            "userFirstname": "David",
+            "userLastname": "Fraenkel",
+            "userEmail": "dfraenkel3@gmail.com",
+            "bookings": {
+                "id": 1,
+                "flightId": "KM89",
+                "from": "Paris",
+                "fromShortcut": "PAR",
+                "to": "Rome",
+                "toShortcut": "RME",
+                "companyName": "Royal Dutch Airlines",
+                "companyShortcut": "KLM",
+                "departureTime": 1580001600,
+                "arrivalTime": 1580001600,
+                "currency": "DKK",
+                "price": 1500
+            }
+        },
+        {
+            "bookingId": "61c885b6860c9683ec69cb76bfa8153b",
+            "userFirstname": "David",
+            "userLastname": "Fraenkel",
+            "userEmail": "dfraenkel3@gmail.com",
+            "bookings": {
+                "id": "asdasdasd123123",
+                "flightId": "KM89",
+                "from": "Paris",
+                "fromShortcut": "PAR",
+                "to": "Rome",
+                "toShortcut": "RME",
+                "companyName": "Royal Dutch Airlines",
+                "companyShortcut": "KLM",
+                "departureTime": 1580001600,
+                "arrivalTime": 1580001600,
+                "currency": "DKK",
+                "price": 1500
+            }
+        },
+        {
+            "bookingId": "d8c3c7f33b55a492f100ade799a1fa04",
+            "userFirstname": "David",
+            "userLastname": "Fraenkel",
+            "userEmail": "dfraenkel3@gmail.com",
+            "bookings": {
+                "id": 4,
+                "flightId": "SAS91",
+                "from": "Copenhagen",
+                "fromShortcut": "CPH",
+                "to": "Stockholm",
+                "toShortcut": "STHLM",
+                "companyName": "Scandinavian Airlines",
+                "companyShortcut": "SAS",
+                "departureTime": 1580001600,
+                "arrivalTime": 1580001600,
+                "currency": "DKK",
+                "price": 1600
+            }
+        }
+    ]
+}

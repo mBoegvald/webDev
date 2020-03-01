@@ -1,0 +1,822 @@
+[
+    {
+        "bookingId": "837055ad33374c19c34a1506c8c41301",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "d4e40730a5b3fe9d",
+        "bookedFlight": {
+            "id": "75e757697573bb8b9b1689831a68fe35",
+            "flightId": "KLM90",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "AF",
+            "departureTime": 1597476300,
+            "arrivalTime": 1597566300,
+            "totalTime": "600",
+            "price": "1775",
+            "currency": "DKK",
+            "from": "Rom",
+            "to": "Sevilla"
+        }
+    },
+    {
+        "bookingId": "562151fef25fbe5da6a4eb4f6e89aa7f",
+        "userName": "Jakob",
+        "userLastName": "Falk",
+        "userEmail": "Jakob@gmail.com",
+        "bookingCode": "505bd797d792848d",
+        "bookedFlight": {
+            "id": "d348b9123b25b073cb768b4ffa06e064",
+            "flightId": "FI11",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "420",
+            "price": "1150",
+            "currency": "DKK",
+            "from": "Berlin",
+            "to": "Malmo"
+        }
+    },
+    {
+        "bookingId": "aa097b769768bc33e0ac02183bedc78b",
+        "userName": "Jakob",
+        "userLastName": "Falk",
+        "userEmail": "Jakob@gmail.com",
+        "bookingCode": "b6a9aa4d66eb2d82",
+        "bookedFlight": {
+            "id": "d348b9123b25b073cb768b4ffa06e064",
+            "flightId": "FI11",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "420",
+            "price": "1150",
+            "currency": "DKK",
+            "from": "Berlin",
+            "to": "Malmo"
+        }
+    },
+    {
+        "bookingId": "4d0c186a064a294d6fbea7772d02b435",
+        "userName": "Jakob",
+        "userLastName": "Falk",
+        "userEmail": "Jakob@gmail.com",
+        "bookingCode": "1b43d0a24c4d3d3f",
+        "bookedFlight": {
+            "id": "d348b9123b25b073cb768b4ffa06e064",
+            "flightId": "FI11",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "420",
+            "price": "1150",
+            "currency": "DKK",
+            "from": "Berlin",
+            "to": "Malmo"
+        }
+    },
+    {
+        "bookingId": "3d20574ac619dfb69659f5dbf6ea1852",
+        "userName": "Jakob",
+        "userLastName": "Falk",
+        "userEmail": "Jakob@gmail.com",
+        "bookingCode": "ed3fa9aa72fe1943",
+        "bookedFlight": {
+            "id": "d348b9123b25b073cb768b4ffa06e064",
+            "flightId": "FI11",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "420",
+            "price": "1150",
+            "currency": "DKK",
+            "from": "Berlin",
+            "to": "Malmo"
+        }
+    },
+    {
+        "bookingId": "fdbe7d81f09f3d41710b513fcfd746b1",
+        "userName": "C\u00e6cilie",
+        "userLastName": "Hansen",
+        "userEmail": "jakobfalkenberg22@gmail.com",
+        "bookingCode": "e703d72889366cf4",
+        "bookedFlight": {
+            "id": "91e0e3f7ba853a7ad13886420b97460e",
+            "flightId": "KLM16",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "DY",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "220",
+            "price": "4600",
+            "currency": "DKK",
+            "from": "London",
+            "to": "Bologna"
+        }
+    },
+    {
+        "bookingId": "15a38e3c444ff2ee0355ceb08e6af622",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "3ceb58c572ff458e",
+        "bookedFlight": {
+            "id": "4cf17a0c3435976ba9f54c382a142cb1",
+            "flightId": "FI54",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "180",
+            "price": "7500",
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Havana"
+        }
+    },
+    {
+        "bookingId": "cbf287f16fdf93ef9468843cd76d17b3",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "827232b72811c51f",
+        "bookedFlight": {
+            "id": "bd5fbb1ad905c1c20692c2f809c13e9c",
+            "flightId": "KLM88",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "KL",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "600",
+            "price": "1750",
+            "currency": "DKK",
+            "from": "Esbjerg",
+            "to": "Dublin"
+        }
+    },
+    {
+        "bookingId": "e4bcbf10b33b5680d4ad53ae73c24cf5",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "06b15d2f68d1b5e1",
+        "bookedFlight": {
+            "id": "4cf17a0c3435976ba9f54c382a142cb1",
+            "flightId": "FI54",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "180",
+            "price": "7500",
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Havana"
+        }
+    },
+    {
+        "bookingId": "8fda874f54c19a885151f932bf595cb3",
+        "userName": "John",
+        "userLastName": "Doe",
+        "userEmail": "John@doe.dk",
+        "bookingCode": "e62cca91af561a1c",
+        "bookedFlight": {
+            "id": "bd5fbb1ad905c1c20692c2f809c13e9c",
+            "flightId": "KLM88",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "KL",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "600",
+            "price": "1750",
+            "currency": "DKK",
+            "from": "Esbjerg",
+            "to": "Dublin"
+        }
+    },
+    {
+        "bookingId": "705a2f2d2bb8f0bdc7db3130543954f8",
+        "userName": "Neymar",
+        "userLastName": "Larsen",
+        "userEmail": "ney@lar.dk",
+        "bookingCode": "d3990daa39bc4886",
+        "bookedFlight": {
+            "id": 2,
+            "flightId": "CPH96",
+            "companyName": "Norvegian",
+            "companyShortcut": "DY",
+            "departureTime": 1582188889,
+            "arrivalTime": 1582461689,
+            "totalTime": 200,
+            "price": 12500,
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Amsterdam"
+        }
+    },
+    {
+        "bookingId": "68a1c795dcf201335d48621db142d4d9",
+        "userName": "jakob",
+        "userLastName": "Laks",
+        "userEmail": "jakob@gmail.com",
+        "bookingCode": "0ae37088d9ddaf65",
+        "bookedFlight": {
+            "id": "91e0e3f7ba853a7ad13886420b97460e",
+            "flightId": "KLM16",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "DY",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "220",
+            "price": "4600",
+            "currency": "DKK",
+            "from": "London",
+            "to": "Bologna"
+        }
+    },
+    {
+        "bookingId": "8a0e5c9537afbf32c40cd5ebb9e4dcb9",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "c993e6f965fa90d2",
+        "bookedFlight": {
+            "id": 2,
+            "flightId": "CPH96",
+            "companyName": "Norvegian",
+            "companyShortcut": "DY",
+            "departureTime": 1582188889,
+            "arrivalTime": 1582461689,
+            "totalTime": 200,
+            "price": 12500,
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Amsterdam"
+        }
+    },
+    {
+        "bookingId": "92c9d3fa10cd764cbf40847209b70e58",
+        "userName": "da",
+        "userLastName": "da",
+        "userEmail": "da@da.dk",
+        "bookingCode": "3126c12cc4010a0e",
+        "bookedFlight": {
+            "id": 2,
+            "flightId": "CPH96",
+            "companyName": "Norvegian",
+            "companyShortcut": "DY",
+            "departureTime": 1582188889,
+            "arrivalTime": 1582461689,
+            "totalTime": 200,
+            "price": 12500,
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Amsterdam"
+        }
+    },
+    {
+        "bookingId": "3698350584a51b513c4fd0e3344b7488",
+        "userName": "d",
+        "userLastName": "d",
+        "userEmail": "d",
+        "bookingCode": "666489522dbb1940",
+        "bookedFlight": {
+            "id": 2,
+            "flightId": "CPH96",
+            "companyName": "Norvegian",
+            "companyShortcut": "DY",
+            "departureTime": 1582188889,
+            "arrivalTime": 1582461689,
+            "totalTime": 200,
+            "price": 12500,
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Amsterdam"
+        }
+    },
+    {
+        "bookingId": "06a1c6c53920d58061de6e16dfcafd08",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "36fd244a4a36b014",
+        "bookedFlight": {
+            "id": "75e757697573bb8b9b1689831a68fe35",
+            "flightId": "KLM90",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "AF",
+            "departureTime": 1597476300,
+            "arrivalTime": 1597566300,
+            "totalTime": "600",
+            "price": "1775",
+            "currency": "DKK",
+            "from": "Rom",
+            "to": "Sevilla"
+        }
+    },
+    {
+        "bookingId": "9434e2b8c25dad2e77e5568cd77ec165",
+        "userName": "d",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "557e0aa5e13d9d50",
+        "bookedFlight": {
+            "id": "75e757697573bb8b9b1689831a68fe35",
+            "flightId": "KLM90",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "AF",
+            "departureTime": 1597476300,
+            "arrivalTime": 1597566300,
+            "totalTime": "600",
+            "price": "1775",
+            "currency": "DKK",
+            "from": "Rom",
+            "to": "Sevilla"
+        }
+    },
+    {
+        "bookingId": "fce4954f2a7474d943a794982b3f5034",
+        "userName": "dd",
+        "userLastName": "dd",
+        "userEmail": "d@d.dk",
+        "bookingCode": "c565ad9808821181",
+        "bookedFlight": {
+            "id": "75e757697573bb8b9b1689831a68fe35",
+            "flightId": "KLM90",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "AF",
+            "departureTime": 1597476300,
+            "arrivalTime": 1597566300,
+            "totalTime": "600",
+            "price": "1775",
+            "currency": "DKK",
+            "from": "Rom",
+            "to": "Sevilla"
+        }
+    },
+    {
+        "bookingId": "95bcba0d40e5d4a30d3720c3d9e6b400",
+        "userName": "ja",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "e462796133b97c42",
+        "bookedFlight": {
+            "id": "5b2555aca300d7036edc9516760f33d7",
+            "flightId": "KLM88",
+            "companyName": "Air France",
+            "companyShortcut": "AF",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "260",
+            "price": "1775",
+            "currency": "DKK",
+            "from": "Madrid",
+            "to": "Falkenberg"
+        }
+    },
+    {
+        "bookingId": "e2d1d233ababb04a653382e406f0b6ea",
+        "userName": "dd",
+        "userLastName": "dd",
+        "userEmail": "ddd@d.dk",
+        "bookingCode": "2efa1840bb19ad44",
+        "bookedFlight": {
+            "id": 2,
+            "flightId": "CPH96",
+            "companyName": "Norvegian",
+            "companyShortcut": "DY",
+            "departureTime": 1582188889,
+            "arrivalTime": 1582461689,
+            "totalTime": 200,
+            "price": 12500,
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Amsterdam"
+        }
+    },
+    {
+        "bookingId": "35dfc4900d45fea5a827b94d6a202426",
+        "userName": "dd",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "2a387351fa0d7ebe",
+        "bookedFlight": {
+            "id": "91e0e3f7ba853a7ad13886420b97460e",
+            "flightId": "KLM16",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "DY",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "220",
+            "price": "4600",
+            "currency": "DKK",
+            "from": "London",
+            "to": "Bologna"
+        }
+    },
+    {
+        "bookingId": "95a3685004e3d4b2a017b5548b9fed33",
+        "userName": "dd",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "badeacf8152a728c",
+        "bookedFlight": {
+            "id": 2,
+            "flightId": "CPH96",
+            "companyName": "Norvegian",
+            "companyShortcut": "DY",
+            "departureTime": 1582188889,
+            "arrivalTime": 1582461689,
+            "totalTime": 200,
+            "price": 12500,
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Amsterdam"
+        }
+    },
+    {
+        "bookingId": "5d429d9029cbad0e8204ca0e2646fd56",
+        "userName": "dd",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "481ff7ced87d56ed",
+        "bookedFlight": {
+            "id": "bd5fbb1ad905c1c20692c2f809c13e9c",
+            "flightId": "KLM88",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "KL",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "600",
+            "price": "1750",
+            "currency": "DKK",
+            "from": "Esbjerg",
+            "to": "Dublin"
+        }
+    },
+    {
+        "bookingId": "68e7f76efac9f4af1725f64f0b12a09a",
+        "userName": "dd",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "da9522f36aef53fb",
+        "bookedFlight": {
+            "id": "75e757697573bb8b9b1689831a68fe35",
+            "flightId": "KLM90",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "AF",
+            "departureTime": 1597476300,
+            "arrivalTime": 1597566300,
+            "totalTime": "600",
+            "price": "1775",
+            "currency": "DKK",
+            "from": "Rom",
+            "to": "Sevilla"
+        }
+    },
+    {
+        "bookingId": "d780f5d37a469c39bd9db18f2b066db9",
+        "userName": "dd",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "57a85a3f5135c562",
+        "bookedFlight": {
+            "id": "91e0e3f7ba853a7ad13886420b97460e",
+            "flightId": "KLM16",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "DY",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "220",
+            "price": "4600",
+            "currency": "DKK",
+            "from": "London",
+            "to": "Bologna"
+        }
+    },
+    {
+        "bookingId": "2fd2e71b0962d930a4ce707bf82ad1d9",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "e7153b735a8e0f93",
+        "bookedFlight": {
+            "id": "91e0e3f7ba853a7ad13886420b97460e",
+            "flightId": "KLM16",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "DY",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "220",
+            "price": "4600",
+            "currency": "DKK",
+            "from": "London",
+            "to": "Bologna"
+        }
+    },
+    {
+        "bookingId": "d160809026329461c09174cc484cf461",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "1a2e862ec69da9b6",
+        "bookedFlight": {
+            "id": "91e0e3f7ba853a7ad13886420b97460e",
+            "flightId": "KLM16",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "DY",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "220",
+            "price": "4600",
+            "currency": "DKK",
+            "from": "London",
+            "to": "Bologna"
+        }
+    },
+    {
+        "bookingId": "a15e35684f83faca3aad44964e5b0917",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "5bac45ac799b568d",
+        "bookedFlight": {
+            "id": "91e0e3f7ba853a7ad13886420b97460e",
+            "flightId": "KLM16",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "DY",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "220",
+            "price": "4600",
+            "currency": "DKK",
+            "from": "London",
+            "to": "Bologna"
+        }
+    },
+    {
+        "bookingId": "4eb45553e0b221de5ca925e96e8985fa",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "d87fab938752990f",
+        "bookedFlight": {
+            "id": "91e0e3f7ba853a7ad13886420b97460e",
+            "flightId": "KLM16",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "DY",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "220",
+            "price": "4600",
+            "currency": "DKK",
+            "from": "London",
+            "to": "Bologna"
+        }
+    },
+    {
+        "bookingId": "ba1c6adee698c1b72c44d6bf23d5802f",
+        "userName": "",
+        "userLastName": "",
+        "userEmail": "",
+        "bookingCode": "5fe6dfccf6818a76",
+        "bookedFlight": {
+            "id": "5b2555aca300d7036edc9516760f33d7",
+            "flightId": "KLM88",
+            "companyName": "Air France",
+            "companyShortcut": "AF",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "260",
+            "price": "1775",
+            "currency": "DKK",
+            "from": "Madrid",
+            "to": "Falkenberg"
+        }
+    },
+    {
+        "bookingId": "d116fe6a35fb6979803e5de97a8f34f7",
+        "userName": "jakob",
+        "userLastName": "Falk",
+        "userEmail": "jakob@gmail.com",
+        "bookingCode": "ce0fca9d9a8a9f17",
+        "bookedFlight": {
+            "id": "d348b9123b25b073cb768b4ffa06e064",
+            "flightId": "FI11",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "420",
+            "price": "1150",
+            "currency": "DKK",
+            "from": "Berlin",
+            "to": "Malmo"
+        }
+    },
+    {
+        "bookingId": "ff3fc70c479d35621c861b19a171fddf",
+        "userName": "add",
+        "userLastName": "addd",
+        "userEmail": "add",
+        "bookingCode": "09b0f983a6210da7",
+        "bookedFlight": {
+            "id": "d348b9123b25b073cb768b4ffa06e064",
+            "flightId": "FI11",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "420",
+            "price": "1150",
+            "currency": "DKK",
+            "from": "Berlin",
+            "to": "Malmo"
+        }
+    },
+    {
+        "bookingId": "c18359c9b71d68048020dba1b7f00cd2",
+        "userName": "Jakob",
+        "userLastName": "Last",
+        "userEmail": "Ka@dk.dk",
+        "bookingCode": "07da2c12c3096488",
+        "bookedFlight": {
+            "id": 2,
+            "flightId": "CPH96",
+            "companyName": "Norvegian",
+            "companyShortcut": "DY",
+            "departureTime": 1582188889,
+            "arrivalTime": 1582461689,
+            "totalTime": 200,
+            "price": 12500,
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Amsterdam"
+        }
+    },
+    {
+        "bookingId": "bed107f052bd8bf6e65febbb58a0e4f3",
+        "userName": "add",
+        "userLastName": "addd",
+        "userEmail": "add@d.dk",
+        "bookingCode": "1a7deb69f9ba5d8d",
+        "bookedFlight": {
+            "id": "d348b9123b25b073cb768b4ffa06e064",
+            "flightId": "FI11",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "420",
+            "price": "1150",
+            "currency": "DKK",
+            "from": "Berlin",
+            "to": "Malmo"
+        }
+    },
+    {
+        "bookingId": "d92d8dea7b3e1fdd60711a4bd35ac048",
+        "userName": "Jakob",
+        "userLastName": "Falk",
+        "userEmail": "jako@gmail.com",
+        "bookingCode": "0993fd3fb5fd2cf5",
+        "bookedFlight": {
+            "id": "91e0e3f7ba853a7ad13886420b97460e",
+            "flightId": "KLM16",
+            "companyName": "KLM Airlines",
+            "companyShortcut": "DY",
+            "departureTime": "1582188889",
+            "arrivalTime": "1582461689",
+            "totalTime": "220",
+            "price": "4600",
+            "currency": "DKK",
+            "from": "London",
+            "to": "Bologna"
+        }
+    },
+    {
+        "bookingId": "4c68376d010b631cc818ebda4c21c460",
+        "userName": "test",
+        "userLastName": "test",
+        "userEmail": "test@test.dk",
+        "bookingCode": "df750c2f9bbf3c31",
+        "bookedFlight": {
+            "id": 2,
+            "flightId": "CPH96",
+            "companyName": "Norvegian",
+            "companyShortcut": "DY",
+            "departureTime": 1582188889,
+            "arrivalTime": 1582461689,
+            "totalTime": 200,
+            "price": 12500,
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Amsterdam"
+        }
+    },
+    {
+        "bookingId": "65c799cf8bd817848d8ceb891ac4deee",
+        "userName": "Mag",
+        "userLastName": "Vagn",
+        "userEmail": "vagn@test.dk",
+        "bookingCode": "f60b973cdd8aca09",
+        "bookedFlight": {
+            "id": "4cf17a0c3435976ba9f54c382a142cb1",
+            "flightId": "FI54",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "180",
+            "price": "7500",
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Havana"
+        }
+    },
+    {
+        "bookingId": "fd8f9a7c290d1ecd29c0406e46ce85ae",
+        "userName": "Mag",
+        "userLastName": "Vagn",
+        "userEmail": "mag@va.dk",
+        "bookingCode": "f5bff78f79da3da1",
+        "bookedFlight": {
+            "id": "4cf17a0c3435976ba9f54c382a142cb1",
+            "flightId": "FI54",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "180",
+            "price": "7500",
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Havana"
+        }
+    },
+    {
+        "bookingId": "dfdf8ebf89d113597d893ea7683f6e6d",
+        "userName": "jako",
+        "userLastName": "doe",
+        "userEmail": "doe@doe.dk",
+        "bookingCode": "30991876c605afd4",
+        "bookedFlight": {
+            "id": "424a35d626a97ed149a022500557c13c",
+            "flightId": "FA77",
+            "companyName": "Air France",
+            "companyShortcut": "AF",
+            "departureTime": 1600785300,
+            "arrivalTime": 1600793100,
+            "totalTime": "120",
+            "price": "1995",
+            "currency": "DKK",
+            "from": "Odense",
+            "to": "Miami"
+        }
+    },
+    {
+        "bookingId": "71d9f04e43c99393e7397a2fdcc97b17",
+        "userName": "jakob",
+        "userLastName": "falk",
+        "userEmail": "ja@gmail.com",
+        "bookingCode": "6b95f11f13291669",
+        "bookedFlight": {
+            "id": "5b2555aca300d7036edc9516760f33d7",
+            "flightId": "KLM88",
+            "companyName": "Air France",
+            "companyShortcut": "AF",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "260",
+            "price": "1775",
+            "currency": "DKK",
+            "from": "Madrid",
+            "to": "Falkenberg"
+        }
+    },
+    {
+        "bookingId": "adf3d8c98f409b442ae19e6913166767",
+        "userName": "jakob",
+        "userLastName": "falk",
+        "userEmail": "ja@jd.dk",
+        "bookingCode": "d9c215c3937e38f8",
+        "bookedFlight": {
+            "id": "4cf17a0c3435976ba9f54c382a142cb1",
+            "flightId": "FI54",
+            "companyName": "Finnair",
+            "companyShortcut": "AY",
+            "departureTime": 1600759500,
+            "arrivalTime": 1600776900,
+            "totalTime": "180",
+            "price": "7500",
+            "currency": "DKK",
+            "from": "Copenhagen",
+            "to": "Havana"
+        }
+    }
+]

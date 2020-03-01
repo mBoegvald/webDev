@@ -1,0 +1,11 @@
+<div id="buyTicketModal">
+    <p class="showFlightInfo"></p>
+    <form id="frmBuyTicket" onsubmit="return validate()">
+      <label>Name(min 2 max 20 characters)</label>
+      <input oninput="validate()" name="txtFirstname" type="text" placeholder="Name" data-validate="string" data-min="2" data-max="20">
+      <label>Last name(min 2 max 20 characters)</label>
+      <input oninput="validate()" name="txtLastname" type="text" placeholder="Lastname" data-validate="string" data-min="2" data-max="20">
+      <input oninput="validate()" name="txtEmail" type="text" placeholder="email" data-validate="email">
+      <button onclick="buyFlight(bookingInfo)" type="submit">Buy</button>
+    <form>
+</div>

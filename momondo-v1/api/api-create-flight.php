@@ -11,10 +11,6 @@ if ( isset($_POST["from"])
 && isset($_POST['price']) 
 && isset($_POST['currency'])
 ){
-
-    $sData = file_get_contents('../data/flights.json');
-    $jData = json_decode($sData);
-
         
     // GET DATA
 

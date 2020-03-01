@@ -1,0 +1,499 @@
+*{
+  padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #130026;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 110%;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+input, button{
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;
+  font-weight: 300;
+}
+input{
+  padding-left: 10px;
+}
+input[type=checkbox]{
+  height: 15px;
+  cursor: pointer;
+  align-self: center;
+}
+label{
+  margin: 0!important;
+  color: white;
+  margin-top: 10px!important;
+
+}
+nav{
+  display: grid;
+  grid-template-columns: 20fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+  width: 100%;
+  height: 70px;
+  padding: 0px 5%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+nav #logo img{
+  width: 175px;
+}
+nav > a{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: white;
+}
+nav > a.active{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+nav a:last-child{
+  justify-self: right;
+}
+
+/*##############################*/
+#search{
+  display: grid;
+  grid-template-columns: 10fr 3fr 10fr 10fr 10fr 5fr;
+  grid-column-gap: 10px;
+  width: 100%;
+  color: white;
+  padding: 2% 5%;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+#search :nth-child(2){
+  color: #555;
+  background-color: white;
+}
+#btnSearch{
+  color: white;
+  background-color: rgba(222, 22, 102, 1);
+  cursor: pointer;
+  transition: .3s;
+}
+#btnSearch:hover{
+  opacity: .8;
+}
+#fromCityContainer {
+position: relative;
+}
+#fromCityResults{
+display: none;
+position: absolute;
+top: 41px;
+width: 100%;
+padding: 5px;
+border-radius: 0 0 5px 5px;
+}
+#ToCityContainer {
+position: relative;
+}
+#ToCityResults{
+display: none;
+position: absolute;
+top: 41px;
+width: 100%;
+padding: 5px;
+border-radius: 0 0 5px 5px;
+}
+.resultItem{
+  cursor: pointer;
+}
+.resultItem:hover{
+  background: rgba(0, 0, 0, 0.226);
+}
+/*##############################*/
+section#temporal{
+  width: 100%;
+  padding: 0% 5%;
+}
+section#temporal img{
+  width: 100%;
+}
+/*##############################*/
+main{
+  display: grid;
+  grid-template-columns: 20fr 50fr;
+  grid-column-gap: 20px;
+  width: 100%;
+  padding: 1% 5%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#options{
+  height: 500px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/*##############################*/
+#results #price-options{
+  display: grid;
+  grid-template-columns: 10fr 10fr 10fr 10fr;
+  width: 100%;
+  background-color: purple;
+  border-radius: 5px;
+}
+#results #price-options > div{
+  padding: 20px 10px;
+  cursor: pointer;
+}
+#results #price-options > div:hover{
+  opacity: .8;
+}
+#results #price-options > div.active{
+  background-color: rgba(222, 22, 102, 1);
+}
+#flights{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 20px;
+  margin-top: 20px;
+}
+#flight{
+  display: grid;
+  grid-template-columns: 50fr 15fr;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#flight-route{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 20px;
+  color: #333;
+  padding: 20px 10px 20px 10px;
+  background-color: white;
+}
+#flight-buy{
+  display: grid;
+  padding: 20px 10px 20px 10px;
+  background-color: #EDECEC;
+}
+#flight-buy > div{
+  font-size: 140%;
+  font-weight: 400;
+  color: black;
+}
+#flight-buy button {
+  background: #28a745;
+  color: white;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+#flight-buy button:hover {
+opacity: .8;
+}
+#flight-route .row{
+  display: grid;
+  grid-template-columns: 10fr 10fr 10fr 10fr 10fr;
+}
+.checkbox-container{
+  display: grid;
+}
+
+
+.airline-icon{
+  width: 40px;
+}
+
+/*##################  LOGIN  ##############################*/
+#loginTitle {
+  text-align: center;
+  color: white;
+  margin: 25px;
+}
+#adminTitle{
+  text-align: center;
+  color: white;
+  margin: 25px;
+}
+#signupTitle{
+  text-align: center;
+  color: white;
+  margin: 25px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+form > * {
+  margin: 10px;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form > input {
+padding: 15px;
+background: #F4F6F8;
+border: none;
+border-radius: 3px;
+}
+form > input:focus{
+  border: 2px solid #EA4C88;
+  outline: none;
+}
+form > input:active{
+  border: none;
+  outline: none;
+}
+form > button{
+  width: 250px;
+  border-radius: 3px;
+  background: #EA4C88;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+  padding: 10px;
+  font-weight: 700;
+}
+form > button:hover{
+  opacity: .8;
+}
+form > button:active{
+  border: none;
+  outline: none;
+}
+form > button:focus{
+  border: none;
+  outline: none;
+}
+#signup_con {
+  display: flex;
+  justify-content: center;
+}
+#login_con {
+  display: flex;
+  justify-content: center;
+}
+h2{
+  text-align: center;
+}
+.cta {
+  background: #EA4C88;
+  border-radius: 3px;
+  transition: .3s;
+}
+.cta:hover {
+  opacity: .8;
+}
+.cta a{
+  color: white;
+}
+/*######################## ADMIN ###################################*/
+#adminSection {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+#adminFormContainer{
+margin: 0 auto;
+}
+#adminFormContainer h2{
+text-align: center;
+color: white;
+margin: 25px;
+}
+#flightItemsContainer{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#flightItemsContainer h2{
+  text-align: center;
+  color: white;
+  margin: 25px;
+}
+
+.flightItem{
+  color: white;
+  width: 425px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+}
+.flightItem a{
+  background: #28a745;
+  padding: 10px;
+  transition: .3s;
+}
+.flightButtonsCon .delete{
+  background: #dc3545;
+}
+.flightItem a:hover{
+  opacity: .8;
+}
+#logoutLink{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#logoutLink a{
+  background: #EA4C88;
+  padding: 10px;
+  transition: .3s;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#logoutLink a:hover{
+  opacity: .8;
+}
+#updateTitle{
+  text-align: center;
+  color: white;
+  margin: 25px;
+}
+#updateForm{
+  margin: 0 auto;
+}
+
+/*#############  MODAL  #################*/
+#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+#modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background: white;
+  margin: 0 auto;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  border-radius: 3px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+#modal h3{
+text-align: center;
+margin: 15px;
+}
+#modal #flight-buy {
+  width: 100%;
+  background: white;
+}
+#modal #flight-buy h3 {
+  text-align: center;
+  margin: 10px;
+}
+#modal #flight-buy button {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+#modal .modal-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+}
+.bookingForm  {
+width: 90%;
+margin: 0 auto;
+}
+.bookingForm label {
+color: black;
+}
+#user-name-container{
+  display: flex;
+  flex-direction: row;
+}
+#user-name-container input{
+  padding: 15px;
+  background: #F4F6F8;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+#user-name-container :nth-child(1){
+  margin-right: 10px !important;
+}
+#modal-close-btn{
+  margin: 10px;
+  cursor: pointer;
+  color: #dc3545;
+  font-weight: 700;
+  font-size: 150%;
+  transition: .3s;
+}
+#modal-close-btn:hover{
+  opacity: .8;
+}
+/*#############  MY TRIPS  #################*/
+#booking-container{
+  background: white;
+  border-radius: 3px;
+  width: 500px;
+  margin: 0 auto;
+}
+#booking-list {
+  display: grid;
+  grid-template-columns: 10fr 90fr;
+  background: #d2dbfa;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.info-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.airline-icon-container{
+  margin-left: 10px;
+}
+#booking-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#booking-info div{
+  justify-self: center;
+  align-self: center;
+}
+#booking-login-text{
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  color:white;
+  margin-bottom: 15px;
+}
+#bookingTitle{
+  text-align: center;
+  color: white;
+  margin: 25px;
+  margin-bottom: 10px;
+}
+
+/*#############  Validation  #################*/
+.invalid{
+  background: rgba(255, 45, 0, .5)!important;
+}
