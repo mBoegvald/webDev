@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="name" id="nameInput" />
+    <button onclick="doSomething()">Do something</button>
+
+    <script>
+      async function doSomething() {
+        var sInput = document.querySelector("#nameInput").value;
+        var jConnection = await fetch(`get.php?name=${sInput}`);
+        var jData = await jConnection.json();
+        console.log(jData);
+      }
+    </script>
+  </body>
+</html>

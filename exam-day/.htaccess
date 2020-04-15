@@ -1,0 +1,59 @@
+RewriteEngine On
+# Rules are based on Regular Expressions
+# caret ^ the start must match
+# $ means the end must match
+# NC No Case
+# L last thing to interpret
+
+# RewriteRule ^items$ items.php [NC,L]
+
+# (\d+) means any number of digits
+# RewriteRule ^items/(\d+)$ api-get-item.php?id=$1
+
+# RewriteRule ^items/delete/(\d+)$ api-delete-item.php?id=$1
+
+# RewriteRule ^a/(\d+)/(\d+)$ test.php?start=$1&end=$2
+
+# RewriteRule ^users/([a-zA-Z0-9]+)$ user.php?name=$1 
+
+ErrorDocument 404 /404.php
+
+
+# RewriteCond %{REQUEST_METHOD} GET
+# RewriteRule ^items$ api-get-items.php [NC,L]
+
+# RewriteCond %{REQUEST_METHOD} POST
+# RewriteRule ^items$ api-save-item.php
+
+# RewriteCond %{REQUEST_METHOD} POST
+# RewriteRule ^items/([a-zA-Z0-9]+)$ api-update-item.php?id=$1 [NC,L]
+
+
+# EXECISE
+
+# ALL CITIES
+# RewriteCond %{REQUEST_METHOD} GET
+# RewriteRule ^cities$ cities.php [NC,L]
+
+# GET ONE CITY
+# RewriteCond %{REQUEST_METHOD} GET
+# RewriteRule ^cities/(\d+)$ api-get-city.php?id=$1 [NC,L]
+
+# SAVE CITY
+# RewriteCond %{REQUEST_METHOD} POST
+# RewriteRule ^cities$ api-save-city.php [NC,L]
+
+# UPDATE CITY
+# RewriteCond %{REQUEST_METHOD} POST
+# RewriteRule ^cities/([a-zA-Z0-9]+)$ api-update-city.php?id=$1 [NC,L]
+
+# DELETE CITY
+# RewriteRule ^cities/delete/(\d+)$ api-delete-city.php?id=$1 [NC,L]
+
+# VALIDATION
+
+# RewriteCond %{REQUEST_METHOD} POST
+# RewriteRule ^cities$ api-save-city.php [NC,L]
+
+# RewriteCond %{REQUEST_METHOD} POST
+# RewriteRule ^cities/(\d+)$ api-update-city.php?id=$1 [NC,L]
